@@ -1,6 +1,6 @@
 script_name('Fishing Helper')
-script_author('D1YORHAY PRODUCTIONS')
-script_description('Скрипт который упрощает работу рыболовам')
+script_author('d1yorhay')
+script_description('Г‘ГЄГ°ГЁГЇГІ ГЄГ®ГІГ®Г°Г»Г© ГіГЇГ°Г®Г№Г ГҐГІ Г°Г ГЎГ®ГІГі Г°Г»ГЎГ®Г«Г®ГўГ Г¬')
 
 local sampev = require "lib.samp.events"
 local imgui = require "imgui"
@@ -12,103 +12,103 @@ local ShowCursor = true
 
 
 local word_actions = {
-    Хлеб = function()
+    Г•Г«ГҐГЎ = function()
         idbait = 0
         fishrod()
     end,
-    Червь = function()
+    Г—ГҐГ°ГўГј = function()
         idbait = 1
         fishrod()
     end,
-    Опарыш = function()
+    ГЋГЇГ Г°Г»Гё = function()
         idbait = 2
         fishrod()
     end,
-    Лягушка = function()
+    Г‹ГїГЈГіГёГЄГ  = function()
         idbait = 3
         fishrod()
     end,
-    Кукуруза = function()
+    ГЉГіГЄГіГ°ГіГ§Г  = function()
         idbait = 4
         fishrod()
     end,
-    Кузнечик = function()
+    ГЉГіГ§Г­ГҐГ·ГЁГЄ = function()
         idbait = 5
         fishrod()
     end,
-    Мотыль = function()
+    ГЊГ®ГІГ»Г«Гј = function()
         idbait = 6
         fishrod()
     end,
-    Муха = function()
+    ГЊГіГµГ  = function()
         idbait = 7
         fishrod()
     end,
-    Тесто = function()
+    Г’ГҐГ±ГІГ® = function()
         idbait = 8
         fishrod()
     end,
-    Живец = function()
+    Г†ГЁГўГҐГ¶ = function()
         idbait = 9
         fishrod()
     end,
-    Икра = function()
+    Г€ГЄГ°Г  = function()
         idbait = 10
         fishrod()
     end,
-    Горох = function()
+    ГѓГ®Г°Г®Гµ = function()
         idbait = 11
         fishrod()
     end,
-    Личинка_короеда = function()
+    Г‹ГЁГ·ГЁГ­ГЄГ _ГЄГ®Г°Г®ГҐГ¤Г  = function()
         idbait = 12
         fishrod()
     end,
-    Подёнка = function()
+    ГЏГ®Г¤ВёГ­ГЄГ  = function()
         idbait = 13
         fishrod()
     end,
-    Сыр = function()
+    Г‘Г»Г° = function()
         idbait = 14
         fishrod()
     end,
-    Перловая_каша = function()
+    ГЏГҐГ°Г«Г®ГўГ Гї_ГЄГ ГёГ  = function()
         idbait = 15
         fishrod()
     end,
-    Манная_каша = function()
+    ГЊГ Г­Г­Г Гї_ГЄГ ГёГ  = function()
         idbait = 16
         fishrod()
     end,
-    Личинка_майского_жука = function()
+    Г‹ГЁГ·ГЁГ­ГЄГ _Г¬Г Г©Г±ГЄГ®ГЈГ®_Г¦ГіГЄГ  = function()
         idbait = 17
         fishrod()
     end,
-    Личинка_ручейника = function()
+    Г‹ГЁГ·ГЁГ­ГЄГ _Г°ГіГ·ГҐГ©Г­ГЁГЄГ  = function()
         idbait = 18
         fishrod()
     end,
-    Пиявка = function()
+    ГЏГЁГїГўГЄГ  = function()
         idbait = 19
         fishrod()
     end,
-    Овод = function()
+    ГЋГўГ®Г¤ = function()
         idbait = 20
         fishrod()
     end,
-    Майский_жук = function()
+    ГЊГ Г©Г±ГЄГЁГ©_Г¦ГіГЄ = function()
         idbait = 21
         fishrod()
     end,
-    Медведка = function()
+    ГЊГҐГ¤ГўГҐГ¤ГЄГ  = function()
         idbait = 22
         fishrod()
     end,
-    Сверчок = function()
+    Г‘ГўГҐГ°Г·Г®ГЄ = function()
         idbait = 23
         fishrod()
     end,
-    Креветка = function()
+    ГЉГ°ГҐГўГҐГІГЄГ  = function()
         idbait = 24
         fishrod()
     end
@@ -140,31 +140,31 @@ end
 encoding.default = 'CP1251'
 u8 = encoding.UTF8
 local bait_variation = {
-    "Хлеб",
-    "Червь",
-    "Опарыш",
-    "Лягушка",
-    "Кукуруза",
-    "Кузнечик",
-    "Мотыль",
-    "Муха",
-    "Тесто",
-    "Живец",
-    "Икра",
-    "Горох",
-    "Личинка_короеда",
-    "Подёнка",
-    "Сыр",
-    "Перловая_каша",
-    "Манная_каша",
-    "Личинка_майского_жука",
-    "Личинка_ручейника",
-    "Пиявка",
-    "Овод",
-    "Майский_жук",
-    "Медведка",
-    "Сверчок",
-    "Креветка"
+    "Г•Г«ГҐГЎ",
+    "Г—ГҐГ°ГўГј",
+    "ГЋГЇГ Г°Г»Гё",
+    "Г‹ГїГЈГіГёГЄГ ",
+    "ГЉГіГЄГіГ°ГіГ§Г ",
+    "ГЉГіГ§Г­ГҐГ·ГЁГЄ",
+    "ГЊГ®ГІГ»Г«Гј",
+    "ГЊГіГµГ ",
+    "Г’ГҐГ±ГІГ®",
+    "Г†ГЁГўГҐГ¶",
+    "Г€ГЄГ°Г ",
+    "ГѓГ®Г°Г®Гµ",
+    "Г‹ГЁГ·ГЁГ­ГЄГ _ГЄГ®Г°Г®ГҐГ¤Г ",
+    "ГЏГ®Г¤ВёГ­ГЄГ ",
+    "Г‘Г»Г°",
+    "ГЏГҐГ°Г«Г®ГўГ Гї_ГЄГ ГёГ ",
+    "ГЊГ Г­Г­Г Гї_ГЄГ ГёГ ",
+    "Г‹ГЁГ·ГЁГ­ГЄГ _Г¬Г Г©Г±ГЄГ®ГЈГ®_Г¦ГіГЄГ ",
+    "Г‹ГЁГ·ГЁГ­ГЄГ _Г°ГіГ·ГҐГ©Г­ГЁГЄГ ",
+    "ГЏГЁГїГўГЄГ ",
+    "ГЋГўГ®Г¤",
+    "ГЊГ Г©Г±ГЄГЁГ©_Г¦ГіГЄ",
+    "ГЊГҐГ¤ГўГҐГ¤ГЄГ ",
+    "Г‘ГўГҐГ°Г·Г®ГЄ",
+    "ГЉГ°ГҐГўГҐГІГЄГ "
 }
 
 function main()
@@ -187,7 +187,7 @@ end
 
 function Refresh()
     if ehoid == 0 then
-        sampAddChatMessage("Пожалуйста нажмите на кнопку {006400}Укажите эхолот", -1)
+        sampAddChatMessage("ГЏГ®Г¦Г Г«ГіГ©Г±ГІГ  Г­Г Г¦Г¬ГЁГІГҐ Г­Г  ГЄГ­Г®ГЇГЄГі {006400}Г“ГЄГ Г¦ГЁГІГҐ ГЅГµГ®Г«Г®ГІ", -1)
     else
         lua_thread.create(function()
             sampSendChat('/invent')
@@ -213,22 +213,22 @@ function modelidget()
         local model = sampTextdrawGetModelRotationZoomVehColor(id)
         if model == 18875 then
             ehoid = id
-            sampAddChatMessage('{640a64}Эхолот {ffffff}указан {00ffff}ID TextDraw: {ff0000}'..ehoid, -1)
-            sampAddChatMessage('Теперь можете нажать на кнопку {006400}Обновить {ffffff}чтобы обновить список рыбы в воде.', -1)
+            sampAddChatMessage('{640a64}ГќГµГ®Г«Г®ГІ {ffffff}ГіГЄГ Г§Г Г­ {00ffff}ID TextDraw: {ff0000}'..ehoid, -1)
+            sampAddChatMessage('Г’ГҐГЇГҐГ°Гј Г¬Г®Г¦ГҐГІГҐ Г­Г Г¦Г ГІГј Г­Г  ГЄГ­Г®ГЇГЄГі {006400}ГЋГЎГ­Г®ГўГЁГІГј {ffffff}Г·ГІГ®ГЎГ» Г®ГЎГ­Г®ГўГЁГІГј Г±ГЇГЁГ±Г®ГЄ Г°Г»ГЎГ» Гў ГўГ®Г¤ГҐ.', -1)
             sampSendClickTextdraw(2111)
         end
     end
 end
 
 function sampev.onShowDialog(dialogId, style, title, button1, button2, text)
-    if title == "{BFBBBA}{73B461}Информация о рыбе" then
-        fish1 = text:gsub("{.-}", ""):gsub("/", ""):gsub("Отсутствует", "")
-        fish = fish1:gsub("Манная каша", "Манная_каша"):gsub("Личинка короеда", "Личинка_короеда"):gsub("Перловая каша", "Перловая_каша"):gsub("Личинка майского жука", "Личинка_майского_жука"):gsub("Личинка ручейника", "Личинка_ручейника"):gsub("Майский жук", "Майский_жук")
+    if title == "{BFBBBA}{73B461}Г€Г­ГґГ®Г°Г¬Г Г¶ГЁГї Г® Г°Г»ГЎГҐ" then
+        fish1 = text:gsub("{.-}", ""):gsub("/", ""):gsub("ГЋГІГ±ГіГІГ±ГІГўГіГҐГІ", "")
+        fish = fish1:gsub("ГЊГ Г­Г­Г Гї ГЄГ ГёГ ", "ГЊГ Г­Г­Г Гї_ГЄГ ГёГ "):gsub("Г‹ГЁГ·ГЁГ­ГЄГ  ГЄГ®Г°Г®ГҐГ¤Г ", "Г‹ГЁГ·ГЁГ­ГЄГ _ГЄГ®Г°Г®ГҐГ¤Г "):gsub("ГЏГҐГ°Г«Г®ГўГ Гї ГЄГ ГёГ ", "ГЏГҐГ°Г«Г®ГўГ Гї_ГЄГ ГёГ "):gsub("Г‹ГЁГ·ГЁГ­ГЄГ  Г¬Г Г©Г±ГЄГ®ГЈГ® Г¦ГіГЄГ ", "Г‹ГЁГ·ГЁГ­ГЄГ _Г¬Г Г©Г±ГЄГ®ГЈГ®_Г¦ГіГЄГ "):gsub("Г‹ГЁГ·ГЁГ­ГЄГ  Г°ГіГ·ГҐГ©Г­ГЁГЄГ ", "Г‹ГЁГ·ГЁГ­ГЄГ _Г°ГіГ·ГҐГ©Г­ГЁГЄГ "):gsub("ГЊГ Г©Г±ГЄГЁГ© Г¦ГіГЄ", "ГЊГ Г©Г±ГЄГЁГ©_Г¦ГіГЄ")
     end 
 end
 
 function sampev.onServerMessage(color, text)
-    if string.find(text, "поймал%(а%) рыбу") ~= nil then
+    if string.find(text, "ГЇГ®Г©Г¬Г Г«%(Г %) Г°Г»ГЎГі") ~= nil then
         Refresh()
     end
       
@@ -236,7 +236,7 @@ end
 
 function imgui.OnDrawFrame()
     
-    imgui.Begin("Fishing Helper by D1YORHAY PRODUCTIONS", variable, imgui.WindowFlags.AlwaysAutoResize)
+    imgui.Begin("Fishing Helper by d1yorhay", variable, imgui.WindowFlags.AlwaysAutoResize)
     
     local words_in_fish = {}
     for word in string.gmatch(fish, "%S+") do
@@ -267,17 +267,17 @@ function imgui.OnDrawFrame()
         end
       end
     end
-    if imgui.Button(u8"Обновить") then
+    if imgui.Button(u8"ГЋГЎГ­Г®ГўГЁГІГј") then
         Refresh()
         imgui.Process = false
         imgui.Process = true
     end
-    if imgui.Button(u8("Укажите эхолот")) then
+    if imgui.Button(u8("Г“ГЄГ Г¦ГЁГІГҐ ГЅГµГ®Г«Г®ГІ")) then
         modelidget()
-        sampAddChatMessage("Теперь нажмите на {640a64}Эхолот {ffffff}в вашем инвентаре", -1)
+        sampAddChatMessage("Г’ГҐГЇГҐГ°Гј Г­Г Г¦Г¬ГЁГІГҐ Г­Г  {640a64}ГќГµГ®Г«Г®ГІ {ffffff}Гў ГўГ ГёГҐГ¬ ГЁГ­ГўГҐГ­ГІГ Г°ГҐ", -1)
         sampSendChat("/invent")
     end
-    imgui.Text(u8("Включение/выключение мышки /mouse"))
-    imgui.Text(u8("Активация деактивация скрипта /fishinghelp"))
+    imgui.Text(u8("Г‚ГЄГ«ГѕГ·ГҐГ­ГЁГҐ/ГўГ»ГЄГ«ГѕГ·ГҐГ­ГЁГҐ Г¬Г»ГёГЄГЁ /mouse"))
+    imgui.Text(u8("ГЂГЄГІГЁГўГ Г¶ГЁГї Г¤ГҐГ ГЄГІГЁГўГ Г¶ГЁГї Г±ГЄГ°ГЁГЇГІГ  /fishinghelp"))
     imgui.End()
 end
