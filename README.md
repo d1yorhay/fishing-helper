@@ -23,14 +23,18 @@ This is a powerful tool designed to optimize and simplify the fishing process in
 
 ### Usage
 
-1. Download the code to your computer using git or download from the [Releases](https://github.com/d1yorhay/fishing-helper/releases) page.
+1. Download and install [Moonloader](https://www.blast.hk/threads/13305/)
+
+2. Download and install [Imgui](https://www.blast.hk/threads/19292/)
+
+3. Download the code to your computer using git or download from the [Releases](https://github.com/d1yorhay/fishing-helper/releases) page.
 ```
 git clone https://github.com/d1yorhay/fishing-helper/
 ```
 
-2. Copy the script to the folder `../{directory with samp}/moonloader`
+4. Copy the script to the folder `../{directory with samp}/moonloader`
 
-3. Launch samp and enter the command `/fishinghelp` into the chat.
+5. Launch samp and enter the command `/fishinghelp` into the chat.
 
 ## License
 This script is distributed under the [MIT License](LICENSE).
