@@ -19,7 +19,7 @@ This is a powerful tool designed to optimize and simplify the fishing process in
 - lua
 - lib.samp.events
 - imgui
-
+- moonloader
 
 ### Usage
 
