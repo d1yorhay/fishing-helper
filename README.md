@@ -21,7 +21,7 @@ This is a powerful tool designed to optimize and simplify the fishing process in
 - imgui
 - moonloader
 
-### Usage
+## Usage
 
 1. Download and install [Moonloader](https://www.blast.hk/threads/13305/)
 
